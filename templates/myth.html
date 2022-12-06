@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div id="name_form">
+  <h1>Mẫu thông tin</h1>
+</div>
+<div id="set_form">
+  <form action="" method="post" novalidate id="formzx">
+    {{ form.hidden_tag() }}
+    
+    
+      <p>
+          <b>{{ form.age.label }}</b><br>
+          {{ form.age(size=15) }} &nbsp; 
+          <i>*Hãy chắc rằng bạn nhập đúng độ tuổi </i>
+          {% for error in form.age.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+          {% endfor %}
+      </p>
+      <p>
+        <b>{{ form.glucozo.label }}</b><br>
+        {{ form.glucozo(size=15) }} &nbsp;
+        <i>*Dự theo chỉ số: mg/dL</i>
+      </p>
+      <p>
+        <b>{{ form.bmi.label }}</b><br>
+        {{ form.bmi(size=15) }} &nbsp;
+        <i>*Dự theo chỉ số: kg/m2</i>
+      </p>
+      <p>
+        <b>{{ form.hypertension.label }}</b>
+        {{ form.hypertension(size=32) }} &nbsp;
+        <i>*Dự theo chỉ số: mmHg</i> <br>
+    </p>
+      <p>
+        <b>{{ form.heart.label }} </b>
+        {{ form.heart(size=32) }}
+      </p>
+    
+      <p><b>Giới tính:</b> &nbsp;
+      
+        {{ form.gender_male.label }} 
+        {{ form.gender_male(size=32) }} &nbsp;
+      
+        {{ form.gender_female.label }} 
+        {{ form.gender_female(size=32) }} &nbsp;
+
+        {{ form.gender_other.label }} 
+        {{ form.gender_other(size=32) }} 
+      </p>
+      <p><b>Tình trạng hôn nhân:</b></p>
+      <p>
+        {{ form.married_Yes.label }} 
+        {{ form.married_Yes(size=32) }} &nbsp;
+      
+        {{ form.married_No.label }}
+        {{ form.married_No(size=32) }}
+      </p>
+      <p><b>Nghề nghiệp</b></p>
+      <p>
+        {{ form.Govt_job.label }} 
+        {{ form.Govt_job(size=32) }}
+      </p>
+      <p>
+        {{ form.Privacy_job.label }} 
+        {{ form.Privacy_job(size=32) }}
+      </p>
+      <p>
+        {{ form.Self_job.label }} 
+        {{ form.Self_job(size=32) }}
+      </p>
+      <p>
+        {{ form.Never_job.label }} 
+        {{ form.Never_job(size=32) }}
+      </p>
+      <p>
+        {{ form.Child_job.label }} 
+        {{ form.Child_job(size=32) }}
+      </p>
+      <p><b>Nơi sống</b></p>
+      <p>
+        {{ form.rural.label }} 
+        {{ form.rural(size=32) }}
+      </p>
+      <p>
+        {{ form.urban.label }} 
+        {{ form.urban(size=32) }}
+      </p>
+      <p><b>Tiền sử hút thuốc</b></p>
+      <p>
+        {{ form.smoke_unk.label }} 
+        {{ form.smoke_unk(size=32) }}
+      </p>
+      <p>
+        {{ form.smoke_usedto.label }} 
+        {{ form.smoke_usedto(size=32) }}
+      </p>
+      <p>
+        {{ form.smoke_nev.label }} 
+        {{ form.smoke_nev(size=32) }}
+      </p>
+      <p>
+        {{ form.smoke_status.label }} 
+        {{ form.smoke_status(size=32) }}
+      </p>
+
+      <p>{{ form.submit() }}</p>
+      
+  </form>
+</div>
+ 
+<div id="responz">
+  <h1>{{ item }}</h1>
+</div> 
+ 
+       
+ 
+{% endblock %}

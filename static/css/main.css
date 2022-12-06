@@ -1,0 +1,133 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 100%;
+    color: rgb(0, 0, 0);
+    background:  url("../images/bg.jpg");
+    margin: 0;
+    text-align: left;
+    padding-left: 50px;
+}
+
+#container {
+    margin: 2em auto;
+    width: 740px;
+    padding: 2em 4em;
+    background: linear-gradient(#6096FD, #FB7B8E);
+}
+
+h1  {
+    background: #f1f7dc;
+    font-family: 'nunito';
+    font-size: 3em;
+    margin: 0;
+	padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0,5em;
+    text-align: center;
+}
+h2 {
+    background: #f1f7dc;
+    font-family: 'nunito';
+    font-size: 2.5em;
+    margin: 0;
+	padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0,5em;
+    text-align: left;
+}
+h2 {
+    font-size: 2em;
+}
+
+p, li {
+    font-size: 1.4em;
+}
+
+p.credit {
+	font-size: 0.9em;
+}
+
+img {
+	display: block;
+	margin: auto;
+	max-width: 100%;
+}
+
+/* links */
+
+a {
+    color: #1d2325;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d4d4d4;
+    text-decoration: underline;
+}
+
+
+/* media queries */
+
+@media (max-width: 800px) {
+    body {
+        background: #f1f7dc;
+    }
+    #container {
+        margin: 0;
+        width: 100%;
+        padding: 2em;
+    }
+}
+
+name_form{ 
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+
+}
+
+.left-column {
+    width: 70%;
+    height: 150px;
+    background: #ddd;
+}
+.right-column {
+    width: 30%;
+    height: 150px;
+    background: #959595;
+}
+
+.set_form {
+    text-align: center;
+}
+
+#intro {
+    width: 100%;
+    height: 70%;
+    color: rgb(238, 11, 11);
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+     
+}
+#responz {
+    color: #231456;}
+
+#result {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#5981b6, #5981b6);
+    background-position: 0px 0px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
