@@ -15,12 +15,23 @@ body {
 }
 
 #container {
-    margin: 2em auto;
+    margin: 5em auto;
     width: 740px;
-    padding: 2em 4em;
+    padding: 4em 4em;
+ 
     background: linear-gradient(#6096FD, #FB7B8E);
 }
 
+#alert-success{
+    background: linear-gradient(#77cc55, #c8cf5d);
+    margin: 1em;
+    text-align: center;
+}
+#respond {
+    width: 740px;
+    padding: 1em 1em;
+    background-color: aqua;
+}
 h1  {
     background: #f1f7dc;
     font-family: 'nunito';
@@ -31,6 +42,7 @@ h1  {
     padding-left: 0.5em;
     padding-right: 0,5em;
     text-align: center;
+     
 }
 h2 {
     background: #f1f7dc;

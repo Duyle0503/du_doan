@@ -6,13 +6,22 @@
 	<title>{{ the_title }}</title>
   <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Source+Sans+Pro" rel="stylesheet">
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-  
+  <link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css”rel=”nofollow” integrity=”sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm” crossorigin=”anonymous”>
 </head>
 
 <body>
 
 <div id="container">
-
+  <div class="container">
+    {% for message in get_flashed_messages() %}
+    <div class="alert_alert-warning">
+        
+        <div id="alert-success" role="alert">
+          <p>{{ message }}</p>
+        </div>
+        
+    </div>
+    {% endfor %}
   <!-- Jinja2 directives: page contents will go between them -->
   {% block body %}
   {% endblock %}
